@@ -40,6 +40,25 @@
                     <img src="images/streams.jpg"/>
                 </paper-material>
             </neon-animatable>
+            <neon-animatable data-route="gulp-pipe" id="gulpPipe" class="slide">
+                <paper-material elevation="5">
+                    <h1>Pipeline</h1>
+                    <ul>
+                        <li>
+                            Linux <br>
+                            <code>
+                                $ bunzip2 -c potato_archive.tar.bz2 | tar -xf
+                            </code>
+                        </li>
+                        <li>
+                            Gulp <br>
+                            <code>
+                                gulp.src('style.scss').pipe(sass()).pipe(gulp.dest('dst'));
+                            </code>
+                        </li>
+                    </ul>
+                </paper-material>
+            </neon-animatable>
         </neon-animated-pages>
     </div>
 </template>

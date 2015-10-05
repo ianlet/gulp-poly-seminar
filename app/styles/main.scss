@@ -76,6 +76,8 @@ paper-material {
 
   h1 {
     text-align: center;
+
+    font-size: 38px;
   }
 
   ul {
@@ -90,6 +92,11 @@ paper-material {
       font-size: 24px;
       font-weight: bold;
     }
+  }
+
+  code {
+    font-size: 16px;
+    font-weight: normal;
   }
 }
 
@@ -129,6 +136,10 @@ paper-material {
 
 #gulpStream {
   background-image: url("../images/background-gulp-stream.svg");
+}
+
+#gulpPipe {
+  background-image: url("../images/background-gulp-pipe.svg");
 }
 
 /* Breakpoints */

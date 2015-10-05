@@ -11,15 +11,15 @@
     });
 
     app.next = function () {
-        app.entryAnimation = 'slide-from-up-animation';
-        app.exitAnimation = 'slide-down-animation';
+        app.entryAnimation = app.nextEntryAnimation;
+        app.exitAnimation = app.nextExitAnimation;
 
         page(app.nextPage);
     };
 
     app.previous = function () {
-        app.entryAnimation = 'slide-from-down-animation';
-        app.exitAnimation = 'slide-up-animation';
+        app.entryAnimation = app.previousEntryAnimation;
+        app.exitAnimation = app.previousExitAnimation;
 
         page(app.previousPage);
     };
