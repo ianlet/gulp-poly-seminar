@@ -21,7 +21,7 @@ h1, h2, h3 {
   left: 0;
   bottom: 0;
   right: 0;
-  
+
 }
 
 neon-animated-pages {
@@ -66,51 +66,69 @@ paper-material {
 }
 
 .slide {
-    paper-material {
-        display: flex;
+  paper-material {
+    display: flex;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    h1 {
-        text-align: center;
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 18px;
+    padding: 0;
+
+    li {
+      margin: 12px 0;
+
+      font-family: 'Roboto Mono', serif;
+      font-size: 24px;
+      font-weight: bold;
     }
+  }
 }
 
 #home {
-    position: relative;
+  position: relative;
 
-    padding: 0;
+  padding: 0;
 
-    background-image: url('../images/background.svg');
+  background-image: url('../images/background.svg');
 
-    #gulp {
-        position: absolute;
-        top: calc(30vh - 6vh);
-        left: calc(27vw - 15vw);
-        
-        width: 30vw;
-        max-height: 12vw;
-    }
+  #gulp {
+    position: absolute;
+    top: calc(30vh - 6vh);
+    left: calc(27vw - 15vw);
 
-    #polymer {
-        position: absolute;
-        bottom: calc(32vh - 9vh);
-        right: calc(27vw - 22vw);
+    width: 30vw;
+    max-height: 12vw;
+  }
 
-        width: 44vw;
-        max-height: 18vh;
-    }
+  #polymer {
+    position: absolute;
+    bottom: calc(32vh - 9vh);
+    right: calc(27vw - 22vw);
+
+    width: 44vw;
+    max-height: 18vh;
+  }
 }
 
 #gulpHome {
-    background-image: url("../images/background-gulp-home.svg");
+  background-image: url("../images/background-gulp-home.svg");
+
+  img {
+    height: 25vh;
+  }
 }
 
 #gulpStream {
-    background-image: url("../images/background-gulp-stream.svg");
+  background-image: url("../images/background-gulp-stream.svg");
 }
 
 /* Breakpoints */
@@ -123,34 +141,65 @@ paper-material {
 }
 
 /* mobile-small */
-@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) { }
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+}
+
 /* mobile-large */
-@media all and (min-width: 361px) and (orientation: portrait) { }
+@media all and (min-width: 361px) and (orientation: portrait) {
+}
+
 /* mobile-small-landscape */
-@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+}
+
 /* mobile-large-landscape */
-@media all and (min-width: 481px) and (orientation: landscape) { }
+@media all and (min-width: 481px) and (orientation: landscape) {
+}
+
 /* tablet-small-landscape */
-@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) { }
+@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+}
+
 /* tablet-large-landscape */
-@media all and (min-width: 961px) and (orientation: landscape) { }
+@media all and (min-width: 961px) and (orientation: landscape) {
+}
+
 /* tablet-small */
-@media all and (min-width: 600px) and (orientation: portrait) { }
+@media all and (min-width: 600px) and (orientation: portrait) {
+}
+
 /* tablet-large */
-@media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {
+}
+
 /* desktop-x-small-landscape */
-@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+}
+
 /* desktop-x-small */
-@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) { }
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {
+}
+
 /* desktop-small-landscape */
-@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {
+}
+
 /* desktop-small */
-@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {
+}
+
 /* desktop-medium-landscape */
-@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {
+}
+
 /* desktop-medium */
-@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {
+}
+
 /* desktop-large */
-@media all and (min-width: 1281px) and (max-width: 1600px) { }
+@media all and (min-width: 1281px) and (max-width: 1600px) {
+}
+
 /* desktop-xlarge */
-@media all and (min-width: 1601px) and (max-width: 1920px) { }
+@media all and (min-width: 1601px) and (max-width: 1920px) {
+}
