@@ -1,8 +1,9 @@
 {
   "name": "gulp_polymer",
   "version": "1.0.0",
-  "description": "Demo application for the seminar about Gulp & Polymer for the CS Games ULaval",
+  "description": "Small presentation about Gulp and Polymer as part of the CS Games ULaval seminars",
   "author": "Ian Létourneau <letourneau.ian@gmail.com>",
+  "repository": "https://github.com/ianlet/gulp-poly-seminar",
   "license": "MIT",
   "private": true,
 

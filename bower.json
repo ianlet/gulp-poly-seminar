@@ -4,7 +4,8 @@
   "authors": [
     "Ian Létourneau <ian.letourneau.1@ulaval.ca>"
   ],
-  "description": "Demo application for the seminar about Gulp & Polymer for the CS Games ULaval",
+  "repository": "https://github.com/ianlet/gulp-poly-seminar",
+  "description": "Small presentation about Gulp and Polymer as part of the CS Games ULaval seminars",
   "main": "",
   "moduleType": [],
   "license": "MIT",
