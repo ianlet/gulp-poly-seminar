@@ -11,20 +11,26 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 <template is="dom-bind" id="app">
     <div id="container">
-        <iron-pages attr-for-selected="data-route" selected="gulp-home">
+        <iron-pages attr-for-selected="data-route" selected="home">
             <section data-route="home" id="home">
                 <img id="gulp" src="images/gulp-white.svg">
                 <img id="polymer" src="images/polymer.svg"/>
             </section>
-            <section data-route="gulp-home" id="gulpHome">
+            <section data-route="gulp-home" id="gulpHome" class="slide">
                 <paper-material elevation="5">
                     <img src="images/gulp.svg"/>
-                    <h1>Module NodeJS</h1>
+                    <h1>NodeJS Module</h1>
+                </paper-material>
+            </section>
+            <section data-route="gulp-stream" id="gulpStream" class="slide">
+                <paper-material elevation="5">
+                    <img src="images/streams.jpg"/>
                 </paper-material>
             </section>
         </iron-pages>

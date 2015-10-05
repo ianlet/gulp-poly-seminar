@@ -8,8 +8,9 @@ body {
   color: #333;
 }
 
-h1 {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h1, h2, h3 {
+  font-family: 'Roboto Mono';
+  font-size: 28px;
 }
 
 #container {
@@ -31,6 +32,9 @@ iron-pages {
 
   > section {
     padding: 64px;
+
+    background: top left no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -59,13 +63,26 @@ paper-material {
   text-align: center;
 }
 
+.slide {
+    paper-material {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
 #home {
     position: relative;
 
     padding: 0;
 
-    background: url("../images/background.svg") top left no-repeat;
-    background-size: 100% 100%;
+    background-image: url('../images/background.svg');
 
     #gulp {
         position: absolute;
@@ -87,20 +104,11 @@ paper-material {
 }
 
 #gulpHome {
-    background: url("../images/background-gulp-home.svg") top left no-repeat;
-    background-size: 100% 100%;
+    background-image: url("../images/background-gulp-home.svg");
+}
 
-    paper-material {
-        display: flex;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        text-align: center;
-    }
+#gulpStream {
+    background-image: url("../images/background-gulp-stream.svg");
 }
 
 /* Breakpoints */
