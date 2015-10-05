@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS Games ULaval Seminars - Gulp & Polymer | Ian Létourneau</title>
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="bower_components/iron-pages/iron-pages.html">
+    <link rel="import" href="../bower_components/paper-material/paper-material.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<template is="dom-bind" id="app">
+    <div id="container">
+        <iron-pages attr-for-selected="data-route" selected="gulp-home">
+            <section data-route="home" id="home">
+                <img id="gulp" src="images/gulp-white.svg">
+                <img id="polymer" src="images/polymer.svg"/>
+            </section>
+            <section data-route="gulp-home" id="gulpHome">
+                <paper-material elevation="5">
+                    <img src="images/gulp.svg"/>
+                    <h1>Module NodeJS</h1>
+                </paper-material>
+            </section>
+        </iron-pages>
+    </div>
+</template>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "gulp_polymer",
+  "version": "1.0.0",
+  "authors": [
+    "Ian Létourneau <ian.letourneau.1@ulaval.ca>"
+  ],
+  "description": "Demo application for the seminar about Gulp & Polymer for the CS Games ULaval",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.1.4",
+    "iron-elements": "~1.0.4",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.5"
+  }
+}
