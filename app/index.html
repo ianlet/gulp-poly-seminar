@@ -23,8 +23,8 @@
     <div id="container">
         <neon-animated-pages attr-for-selected="data-route" selected="[[route]]" entry-animation="[[entryAnimation]]" exit-animation="[[exitAnimation]]">
             <neon-animatable data-route="home" id="home">
-                <img id="gulp" src="images/gulp-white.svg">
-                <img id="polymer" src="images/polymer.svg"/>
+                <img id="gulpIcon" src="images/gulp-white.svg">
+                <img id="polymerIcon" src="images/polymer.svg"/>
             </neon-animatable>
             <neon-animatable data-route="gulp" id="gulpHome" class="slide">
                 <paper-material elevation="5">
@@ -56,6 +56,15 @@
                                 gulp.src('style.scss').pipe(sass()).pipe(gulp.dest('dst'));
                             </code>
                         </li>
+                    </ul>
+                </paper-material>
+            </neon-animatable>
+            <neon-animatable data-route="polymer" id="polymer" class="slide">
+                <paper-material elevation="5">
+                    <img src="images/polymer-gray.svg"/>
+                    <ul>
+                        <li>Web Components</li>
+                        <li>JS Library</li>
                     </ul>
                 </paper-material>
             </neon-animatable>

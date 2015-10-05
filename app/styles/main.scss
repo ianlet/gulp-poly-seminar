@@ -107,7 +107,7 @@ paper-material {
 
   background-image: url('../images/background.svg');
 
-  #gulp {
+  #gulpIcon {
     position: absolute;
     top: calc(30vh - 6vh);
     left: calc(27vw - 15vw);
@@ -116,7 +116,7 @@ paper-material {
     max-height: 12vw;
   }
 
-  #polymer {
+  #polymerIcon {
     position: absolute;
     bottom: calc(32vh - 9vh);
     right: calc(27vw - 22vw);
@@ -140,6 +140,15 @@ paper-material {
 
 #gulpPipe {
   background-image: url("../images/background-gulp-pipe.svg");
+}
+
+#polymer {
+  background-image: url("../images/background-polymer.svg");
+
+  img {
+    height: 86px;
+    max-height: 15vh;
+  }
 }
 
 /* Breakpoints */

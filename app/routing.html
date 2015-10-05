@@ -56,6 +56,17 @@
           app.previousExitAnimation = 'slide-right-animation';
       });
 
+      page('/polymer', function () {
+          app.route = 'polymer';
+          app.previousPage = '/gulp-end';
+          app.nextPage = '/polymer-elements';
+
+          app.nextEntryAnimation = 'slide-from-right-animation';
+          app.nextExitAnimation = 'slide-left-animation';
+          app.previousEntryAnimation = 'slide-from-left-animation';
+          app.previousExitAnimation = 'slide-right-animation';
+      });
+
     page({
         hashbang: true 
     });
