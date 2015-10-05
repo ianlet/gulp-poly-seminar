@@ -5,8 +5,16 @@
 
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
+    <link rel="import" href="bower_components/polymer/polymer.html">
+
+    <link rel="import" href="routing.html">
+
     <link rel="import" href="bower_components/iron-pages/iron-pages.html">
-    <link rel="import" href="../bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/neon-animation/neon-animated-pages.html">
+    <link rel="import" href="bower_components/neon-animation/neon-animatable.html">
+    <link rel="import" href="bower_components/neon-animation/neon-animations.html">
+    <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/iron-a11y-keys/iron-a11y-keys.html">
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -16,26 +24,29 @@
 
 <body>
 <template is="dom-bind" id="app">
+    <iron-a11y-keys keys="shift+space left pagedown down" target="[[target]]" on-keys-pressed="previous"></iron-a11y-keys>
+    <iron-a11y-keys keys="space right pageup up" target="[[target]]" on-keys-pressed="next"></iron-a11y-keys>
+
     <div id="container">
-        <iron-pages attr-for-selected="data-route" selected="home">
-            <section data-route="home" id="home">
+        <neon-animated-pages attr-for-selected="data-route" selected="[[route]]" entry-animation="[[entryAnimation]]" exit-animation="[[exitAnimation]]">
+            <neon-animatable data-route="home" id="home">
                 <img id="gulp" src="images/gulp-white.svg">
                 <img id="polymer" src="images/polymer.svg"/>
-            </section>
-            <section data-route="gulp-home" id="gulpHome" class="slide">
+            </neon-animatable>
+            <neon-animatable data-route="gulp" id="gulpHome" class="slide">
                 <paper-material elevation="5">
                     <img src="images/gulp.svg"/>
                     <h1>NodeJS Module</h1>
                 </paper-material>
-            </section>
-            <section data-route="gulp-stream" id="gulpStream" class="slide">
+            </neon-animatable>
+            <neon-animatable data-route="gulp-stream" id="gulpStream" class="slide">
                 <paper-material elevation="5">
                     <img src="images/streams.jpg"/>
                 </paper-material>
-            </section>
+            </neon-animatable>
         </iron-pages>
     </div>
 </template>
-
+<script src="scripts/app.js"></script>
 </body>
 </html>

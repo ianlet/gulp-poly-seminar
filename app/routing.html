@@ -1,0 +1,26 @@
+<script src="bower_components/page/page.js"></script>
+<script>
+  window.addEventListener('WebComponentsReady', function() {
+    page('/', function() {
+        app.route = 'home';
+        app.previousPage = '/';
+        app.nextPage = '/gulp';
+    });
+
+    page('/gulp', function() {
+        app.route = 'gulp';
+        app.previousPage = '/';
+        app.nextPage = '/gulp-stream';
+    });
+
+    page('/gulp-stream', function() {
+        app.route = 'gulp-stream';
+        app.previousPage = '/gulp';
+        app.nextPage = '/';
+    });
+
+    page({
+        hashbang: true 
+    });
+  });
+</script>
