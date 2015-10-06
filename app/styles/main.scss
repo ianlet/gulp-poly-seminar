@@ -151,6 +151,37 @@ paper-material {
   }
 }
 
+.polymer-elements {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#ironElements {
+  background-color: #81C784;
+}
+
+#paperElements {
+  background-color: #FFAB91;
+}
+
+#googleElements {
+  background-color: #64B5F6;
+}
+
+#goldElements {
+  background-color: #FFB74D;
+}
+
+#neonElements {
+  background-color: #A7FFEB;
+}
+
+#platinumElements {
+  background-color: #CFD8DC;
+}
+
 /* Breakpoints */
 /* Small */
 @media (max-width: 600px) {
