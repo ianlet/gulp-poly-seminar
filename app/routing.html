@@ -70,7 +70,18 @@
       page('/polymer-elements', function () {
           app.route = 'polymer-elements';
           app.previousPage = '/polymer';
-          app.nextPage = '/polymer-elements';
+          app.nextPage = '/lets-build';
+
+          app.nextEntryAnimation = 'slide-from-right-animation';
+          app.nextExitAnimation = 'slide-left-animation';
+          app.previousEntryAnimation = 'slide-from-left-animation';
+          app.previousExitAnimation = 'slide-right-animation';
+      });
+
+      page('/lets-build', function () {
+          app.route = 'lets-build';
+          app.previousPage = '/polymer-elements';
+          app.nextPage = '/lets-build';
 
           app.nextEntryAnimation = 'slide-from-right-animation';
           app.nextExitAnimation = 'slide-left-animation';

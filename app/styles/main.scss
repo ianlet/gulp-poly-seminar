@@ -136,6 +136,10 @@ paper-material {
 
 #gulpStream {
   background-image: url("../images/background-gulp-stream.svg");
+
+  img {
+    height: 90%;
+  }
 }
 
 #gulpPipe {
@@ -184,6 +188,10 @@ paper-material {
 
 #platinumElements {
   background-color: #CFD8DC;
+}
+
+#letsBuild {
+  background-image: url("../images/background-lets-build.svg");
 }
 
 /* Breakpoints */
