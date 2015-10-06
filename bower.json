@@ -23,6 +23,6 @@
     "iron-elements": "~1.0.4",
     "paper-elements": "PolymerElements/paper-elements#~1.0.5",
     "page": "visionmedia/page.js#~1.6.3",
-    "neon-animation": "https://github.com/ianlet/neon-animation"
+    "neon-animation": "ianlet/neon-animation"
   }
 }
